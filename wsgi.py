@@ -7,7 +7,7 @@ application = Flask(__name__)
 @application.route('/')
 @application.route('/status')
 def status():
-    return jsonify({'stat': 'ok'})
+    return jsonify({'status': 'ok'})
 
 
 @application.route('/prediction', methods=['POST'])
